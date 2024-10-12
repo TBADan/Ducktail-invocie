@@ -1,0 +1,340 @@
+/*
+Ducktail Theme
+Created by Dan Whitehouse
+24/10/12 */
+
+/*=========================== TYPOGRAPHY =========================*/
+
+#invoice p{
+  font-family: "Inconsolata", monospace;
+}
+#invoice h2{
+  font-family: "Inconsolata", monospace;
+}
+#invoice h3 {
+  margin: 0;
+}
+
+#invoice {
+  color: #161412;
+  font-family: "Inconsolata", monospace;
+  font-size: 0.5em;
+  line-height: 1.2;
+
+}
+
+#invoice h1 {
+  color: #000;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#invoice h2{
+  color: #ff5e14;
+  font-size: 1.5em;
+  margin: 0;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+}
+#invoice h3 {
+  color: #000;
+  font-weight: 400;
+  font-size: 3em;
+  font-style: normal;
+  line-height: 1.2;
+  margin-top: 10px;
+  text-transform: none;
+  white-space: normal;
+}
+
+#invoice h2 {
+  font-size: 4em;
+}
+
+#company-address,
+#client-details,
+#payment-details {
+  font-size: 0.5em;
+  color: #8E8E8E;
+}
+#invoice-other {
+  font-size: 0.5em;
+  color: #8E8E8E;
+}
+#invoice-amount td,
+th,
+#invoice-info {
+  font-size: 1.5em;
+  
+}
+
+#invoice #invoice-info h3 {
+  font-size: 11pt;
+  margin: 3px 0 0 0;
+}
+
+#invoice #invoice-info h2 {
+  font-size: 14pt;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+#invoice #invoice-terms h2 {
+  margin-bottom: 3px;
+}
+
+#invoice #invoice-terms h3 {
+  color: #666;
+  font-size: 2pt;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+#invoice #payment-due {
+  color: #000;
+  font-size: 8pt;
+  font-weight: 100;
+  line-height: 1.3;
+}
+
+#invoice-info #payment-total {
+  display: none;
+}
+
+#invoice-other h2,
+#payment-details h2 {
+  margin-bottom: 1em;
+  color:#ff5e14
+}
+
+#invoice .total {
+  font-size: 12pt;
+}
+
+#comments {
+  color: #000;
+  font-size: 10pt;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-top: 15px;
+}
+
+/*=========================== LAYOUT =========================*/
+
+#invoice {
+  border-top: 5px solid #ED6932;
+  padding: 0 1cm 1cm 1cm;
+}
+
+#invoice-header #company-address {
+  clear: right;
+  float: right;
+  width: 250px;
+  color: #000;
+} 
+
+#invoice-header h1 {
+  color: #000;
+  float: left;
+  margin: 5px 0 0 0;
+  width: 350px;
+}
+
+#invoice-header {
+  padding-top: 2cm;
+}
+
+#invoice-header .logo {
+  float: left;
+  width: 300px;
+}
+
+#invoice-blank-header {
+  margin-top: 1.6cm;
+}
+
+#client-details {
+  border-top: 1px solid #000;
+  border-top: 1px solid #000;
+  color: #000;
+  float: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 10px;
+  width: 330px;
+}
+
+#invoice-info {
+  border-top: 1px solid #000;
+  clear: both;
+  float: right;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 250px;
+}
+
+#invoice-info th {
+  text-align: right;
+}
+
+#payment-terms {
+  display: none;
+}
+
+#invoice-amount {
+  clear: both;
+  margin: 2em 0 2em 0;
+}
+
+#payment-details {
+  border-top: 1px solid #000;
+  float: left;
+  width: 330px;
+}
+
+#invoice-other {
+  border-top: 1px solid #000;
+  clear: both;
+  float: right;
+  width: 270px;
+}
+
+#comments {
+  clear: both;
+  font-size: 0.5em;
+  text-align: center;
+  padding-top: 1cm;
+}
+
+/*=========================== INVOICE AMOUNT TABLE =========================*/
+
+#invoice table {
+  border-collapse: collapse;
+  clear: both;
+  width: 100%;
+}
+
+#invoice table th {
+  padding: 8px 5px;
+  text-align: left;
+}
+
+#invoice #header_row {
+  background: #fff;
+  color: #000;
+  font-weight: 900;
+  font-size: 0.5em; 
+}
+
+#invoice-amount td.action {
+  border-bottom: 0;
+  font-weight: 900;
+}
+
+.odd td {
+  background: #FFF;
+}
+
+.even td {
+  background: #FFF;
+}
+
+#invoice-amount .discount_tier td {
+  font-size: 0.5em;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+#invoice-amount #total_tr td {
+  border-bottom: 0;
+}
+
+#invoice-amount #vat_tr td {
+  border-bottom: 1px solid #000;
+}
+
+#invoice-amount td {
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  white-space: nowrap;
+}
+
+#invoice-amount td {
+  margin: 0;
+  padding: 6px 5px;
+  vertical-align: top;
+}
+
+#invoice-amount td.item_r {
+  text-align: right;
+}
+
+#invoice-amount td.item_l {
+  text-align: left;
+  white-space: normal;
+}
+
+#invoice-amount td.total {
+  font-weight: bold;
+  text-align: right;
+}
+
+#invoice-amount .details_th {
+  width: 44%;
+}
+
+#invoice-amount .details_notax_th {
+  width: 52%;
+}
+
+#invoice-amount .quantity_th {
+  width: 13%;
+}
+
+#invoice-amount .subtotal_th {
+  text-align: right;
+  width: 18%;
+}
+
+#invoice-amount .unitprice_th {
+  text-align: right;
+  width: 17%;
+}
+
+#invoice-amount .salestax_th {
+  text-align: center;
+  width: 8%;
+}
+
+#invoice-amount th.money_th {
+  text-align: right;
+}
+
+/* Invoice UK VAT Summary Table */
+#invoice #invoice-uk-vat-summary {
+  background: #fff;
+  border-collapse: collapse;
+  border: 0;
+  clear: both;
+  margin: 25px 0 0 0;
+  width: 100%;
+}
+
+#invoice tr#invoice-uk-vat-header th {
+  border-top: 1px solid #ccc;
+  padding: 7px 0;
+}
+
+#invoice-uk-vat-summary td,
+#invoice #invoice-uk-vat-summary th {
+  font-size: 9pt;
+  padding: 2px 0;
+  text-align: left;
+}
+
+#vat-total td,
+#vat-total th {
+  border-top: 1px solid #ccc;
+}
